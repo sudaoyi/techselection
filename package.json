@@ -1,0 +1,85 @@
+{
+  "_args": [
+    [
+      {
+        "name": "techselection",
+        "raw": "techselection",
+        "rawSpec": "",
+        "scope": null,
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/sudaoyi/yuanma/js/test"
+    ]
+  ],
+  "_from": "techselection@latest",
+  "_id": "techselection@0.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/techselection",
+  "_nodeVersion": "6.2.2",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/techselection-0.0.1.tgz_1472178501299_0.9651988907717168"
+  },
+  "_npmUser": {
+    "email": "3303332004@qq.com",
+    "name": "sudaoyi"
+  },
+  "_npmVersion": "3.9.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "techselection",
+    "raw": "techselection",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/techselection/-/techselection-0.0.1.tgz",
+  "_shasum": "7f5980a3f8bf8f7709f60d5569b7658c96aedd28",
+  "_shrinkwrap": null,
+  "_spec": "techselection",
+  "_where": "/home/sudaoyi/yuanma/js/test",
+  "author": {
+    "name": "sudaoyi"
+  },
+  "bin": {
+    "techselection": "./bin/techselection.js"
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0"
+  },
+  "description": "show the repo stats from github",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "7f5980a3f8bf8f7709f60d5569b7658c96aedd28",
+    "tarball": "https://registry.npmjs.org/techselection/-/techselection-0.0.1.tgz"
+  },
+  "keywords": [
+    "github"
+  ],
+  "license": "GPL-3.0",
+  "main": "./bin/techselection.js",
+  "maintainers": [
+    {
+      "email": "3303332004@qq.com",
+      "name": "sudaoyi"
+    }
+  ],
+  "name": "techselection",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "github.com/sudaoyi/techselection.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.1"
+}
