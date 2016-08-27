@@ -7,7 +7,7 @@ Make sure you have installed the npm
 * install with npm 
 
                 
-        npm intall techselection  -g
+        npm install techselection  -g
 
 ### Usage
 
