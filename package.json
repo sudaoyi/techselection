@@ -1,6 +1,6 @@
 {
   "name": "techselection",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "show repo info from github",
   "main":"getRepoStats.js",
   "bin": {

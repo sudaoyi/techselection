@@ -16,17 +16,21 @@ function getList(tn) {
 		var html = '';
 		res.on("data", (d) => { html += d; });
 		res.on("end", (e) => {
-			filterStats(html);
+			filterStats(html,tn);
 		})
 	}).on('error', (e) => { console.log(e) });
 	req.end();
 
 };
 
-function filterStats(html) {
+function filterStats(html,tn) {
 
 	var $ = cheerio.load(html);
 	var repoName = $('.repo-list-item').find('.repo-list-name').children().first().text().trim();
+	if(!repoName){
+		console.log(tn+" :fail to get the repo info,please retry...");
+		return;
+	}
 	var statsArray = [repoName];
 	var stats = $('.repo-list-item').children().first().text().trim();
 	statsArray = statsArray.concat(stats.split(/\s+/))
@@ -37,8 +41,8 @@ function filterStats(html) {
 
 function showInfo(data) {
 
-	var info = '仓库：' + fixedLength(data[0], 25) + '开发语言：' + fixedLength(data[1], 15) + 'starts：'
-		+ fixedLength(data[2], 10) + 'forks：' + fixedLength(data[3], 10) + '更新时间： ' + data[4];
+	var info = '仓库(repo)：' + fixedLength(data[0], 25) + '开发(language)：' + fixedLength(data[1], 15) + 'stars：'
+		+ fixedLength(data[2], 10) + 'forks：' + fixedLength(data[3], 10) + '更新时间(time)： ' + data[4];
 	process.stdout.write(info + '\n')
 }
 
